@@ -3215,6 +3215,8 @@ ssh user@host cat /path/to/remotefile | diff /path/to/localfile -
 
 ```bash
 ssh -t reachable_host ssh unreachable_host
+# Short form -J[ump]:
+ssh -J reachable_host -J n_other_reachable_host unreachable_host
 ```
 
 ###### Run command over SSH on remote host
